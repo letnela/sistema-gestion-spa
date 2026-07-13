@@ -77,3 +77,9 @@ app.include_router(public_router, prefix=settings.API_V1_PREFIX)
 
 
 # Fase 9: dashboard, indicadores, reportes y exportaciones integrados.
+@app.get("/cors-test")
+def cors_test():
+    return {
+        "cors": settings.CORS_ORIGINS,
+        "cors_list": settings.cors_origins_list,
+    }
