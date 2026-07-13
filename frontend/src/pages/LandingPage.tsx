@@ -41,18 +41,7 @@ export function LandingPage(){
    </div>
   </section>
 
-  {/* Nosotros */}
-  <section id="nosotros" className="mx-auto max-w-6xl px-5 py-20">
-   <div className="grid items-center gap-12 lg:grid-cols-2">
-    <div className="overflow-hidden rounded-[2rem]"><img className="h-full w-full object-cover" src="https://images.unsplash.com/photo-1522337194846-7c8a83e02b40?auto=format&fit=crop&w=1200&q=80" alt="Equipo Elegance"/></div>
-    <div>
-     <span className="eyebrow border-slate-200 bg-slate-100 text-slate-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300">Nosotros</span>
-     <h2 className="section-title mt-4">Un equipo que cuida cada detalle</h2>
-     <p className="muted mt-4 text-base">Elegance nació con una idea simple: que ir al salón se sienta menos como un trámite y más como un momento para ti. Combinamos técnicas profesionales, productos de calidad y un sistema propio de gestión para que tu cita, tu historial y tus preferencias siempre estén a un clic de distancia.</p>
-     <ul className="mt-6 space-y-3">{RAZONES.map(r=><li key={r} className="flex items-start gap-3"><span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-violet-100 text-violet-700 dark:bg-violet-950 dark:text-violet-300"><Check size={13}/></span><span className="text-sm text-slate-600 dark:text-slate-300">{r}</span></li>)}</ul>
-    </div>
-   </div>
-  </section>
+  
 
   {/* Servicios */}
   <section id="servicios" className="bg-slate-50 px-5 py-20 dark:bg-slate-900/40">
